@@ -1,0 +1,284 @@
+
+
+
+.circle-green{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+display: inline-block;
+position: absolute;
+top: 70px ;
+left: 130px;
+background-color:#2d9189;
+}
+
+.circle-blue{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+display: inline-block;
+position: absolute;
+top: 70px ;
+left: 495px;
+background-color: #cd9838;
+}
+
+.circle-red{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+display: inline-block;
+position: absolute;
+top: 70px ;
+left: 860px;
+background-color: #144664;
+}
+
+.icons{
+width: 50px;
+height: 50px;  
+margin: 20px auto;
+}
+
+
+.block{
+width: 350px;
+height: 200px;
+text-align: center;
+padding: 5px;
+position: absolute;
+top: 110px;
+left: -120px;
+}
+
+.absolutecenter {
+width: 1400px;
+height: 3300px;
+margin: 0 auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;  
+}
+
+.one{
+width:960px;
+position: absolute;
+top: 650px;
+left: 220px;
+height: 400px;  
+z-index: 0;
+}
+
+.aboutus{
+width:960px;
+position: absolute;
+top: 650px;
+left: 220px;
+z-index: 0;
+}
+
+.three{
+width:960px;
+position: absolute;
+top: 1150px;
+left: 220px;
+height: 450px;  
+z-index: 0;
+}
+
+.buttons{
+width: 1350px;
+height: 50px;
+font-size: 17pt;
+z-index: 999;
+color: red;
+}
+
+.header{
+width: 1400px;
+height: 50px; 
+position: fixed;
+background-color: #CFCFCF;
+z-index: 999;
+}
+
+.top{
+margin-top: 450px;
+}
+
+.two{
+width:960px;
+position: absolute;
+top: 150px;
+left: 220px;
+z-index: 0;
+}
+
+.slider{
+width:960px;
+margin-top: 1150px;
+}
+
+.back{
+width:1400px;
+height: 350px; 
+position: absolute;
+top: 200px;
+z-index: 0;
+background-color: #efefef;
+}
+
+
+
+.sitelogoright{
+width: 600px;
+height: 100px;
+top: 50px;
+left:500px;
+position: absolute;
+float: right;
+padding: 5px;
+}
+
+.social{
+background-color: #47a5de;
+width: 960px;
+height: 75px;
+top: 2585px;
+position: absolute;
+display: inline-block 
+
+}
+
+.price{
+background-color: #47a5de;
+width: 960px;
+height: 20px;
+top: 1500px;
+position: absolute;
+}
+
+.line{
+background-color: #47a5de;
+width: 1400px;
+height: 15px;
+top: 2790px;
+position: absolute;
+}
+
+
+
+.contact{
+background-color: #898989;
+width: 1400px;
+height: 430px;
+top: 2800px;
+position: absolute;
+padding-left: 220px;
+}
+
+p{
+color: #47a5de;
+font-size: 45px;
+font-weight:bolder;
+}
+
+p span{
+color: #000000;
+font-weight:normal;
+}
+
+
+.box{
+width: 300px;
+height: 460px;
+background-color: #47a5de;
+text-align: center;
+position: absolute;
+top: 500px;
+}
+
+
+
+
+h2{
+color: black;
+}
+
+.contacttext{
+width: 960px;
+
+padding-top: 30px;
+}
+
+
+
+
+
+
+.pix{
+	top: 500px;
+	position: absolute;
+}
+
+.pix2{
+	top: 800px;
+	position: absolute;
+}
+
+.pix3{
+	top: 1000px;
+	position: absolute;
+}
+
+.pix4{
+	top: 1500px;
+	position: absolute;
+}
+
+
+.carousel  {
+   max-width: 960px;
+   margin: 50px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 40px 40px; 
+   overflow: hidden; 
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; 
+   position: relative;
+}
+.carousel-block {
+   float: left; 
+   width: 250px; 
+   padding: 10px 10px 10px 0px; 
+}
+.carousel-block img{
+	display:block;
+}
+
+
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: relative;
+   top: 80px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../images/carousel-left.svg); 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../images/carousel-right.svg); 
+}
+
+.size{
+  width: 960px;
+  height: 100px;
+   
+}
