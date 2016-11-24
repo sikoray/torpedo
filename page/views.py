@@ -16,9 +16,10 @@ def contact(request):
 		
 		if form.is_valid():
 			subject = form.cleaned_data['subject']
+			phone = form.cleaned_data['phone']
 			sender = form.cleaned_data['sender']
 			message = form.cleaned_data['message']
-			plus = message + ' ' + sender
+			plus = 'Текст повідомлення:'+message+'\n'+'Адреса відправника:'+sender+'\n'+'Імя:'+subject+'\n'+'Номер телефону:'+phone
 			recipients = ['sikora.y@pozitiff.ua']
 						
 			try:

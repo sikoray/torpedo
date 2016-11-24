@@ -3,284 +3,370 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>Torpedo</title>
-
 	<link rel="stylesheet" href="{% static 'css/contact.css' %}">
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
- 	
+  	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="https://use.fontawesome.com/f7ee977e76.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lobster|Marck+Script|Prosto+One" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static 'script/owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'script/owl-carousel/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'script/assets/owl-carousel/owl.carousel.js' %}">
 	</head>
 
 	<body>
-	
-	<div class="absolutecenter">
-	<div id="content">
+	 <div class="container">
+    <div class="header">
+      <div class="price"><a href="https://docs.google.com/spreadsheets/d/1_P8tmZvNEEDBjJ6sMKsNuLsn_6_YquDfvI2tTQpbCUY/edit?usp=sharing"><img src="{% static 'images/price1.png' %}"></a></div>
+      <div class="logo">Все для дому та саду</div>
+    <section class="demo-styles">
+    <div id="sticky" class="sticky-element">
+      <div class="sticky-anchor"></div>
+        <div class="sticky-content">
+         <div class="menu">
+          <div id="menu">
+            <a href="#ex1"><button type="button" class="btn btn-link">Про нас</button></a>
+            <a href="#ex2"><button type="button" class="btn btn-link">Товари</button></a>
+            <a href="#ex3"><button type="button" class="btn btn-link">&nbsp;&nbsp;Акції&nbsp;&nbsp;</button></a>
+            <a href="#ex4"><button type="button" class="btn btn-link">Контакти</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="slider">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
 
+  <!-- Обгортка для слайдів -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="{% static 'images/slider5.png' %}" alt="...">
+      <div class="carousel-caption">
+       <div class="slider-txt"><p><h2>Lorem ipsum dolor</h2></p><p> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehende</p></div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{% static 'images/slide3_h8jWvN0.png' %}" alt="...">
+      <div class="carousel-caption">
+        2
+      </div>
+    </div>
+   <div class="item">
+      <img src="{% static 'images/slider5.png' %}" alt="...">
+      <div class="carousel-caption"><div class="slider-txt"><p><h2>Lorem ipsum dolor</h2></p><p> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehende</p></div>
+      </div>
+    </div>
+  </div>
 
-				<div class="header">
-					
-					<div class="buttons">
-					<div id="skroll">	
-						<ul class="nav navbar-nav navbar-right">
-							
-					        <li><a href="#ex1">Про нас</a></li>
-					        <li><a href="#ex2">Ціни</a></li>		        
-		          			<li><a href="#ex3">Товари</a></li>
-		          			<li><a href="#ex4">Звязатись з нами </a></li>	        
-				        </ul>
-				    </div>
-				    </div>
-				    	  			
-			      	
-				</div>
-				
-				<div class="back"></div>
-				<div class="two">
-					{% for slide in slide %}
+  <!-- Управління -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Попередній</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Наступний</span>
+  </a>
+</div>
 
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  		<ol class="carousel-indicators">
-		    		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    		<li data-target="#carousel-example-generic" data-slide-to="1" ></li>
-		    		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  		</ol>
-		  		<div class="carousel-inner" role="listbox">
-		    		<div class="item active">
-		     			<img src="{{slide.slideimage1.url}}" >
-		      			<div class="carousel-caption">
-		        			<div class="thumbnail">
-		      					<div class="caption">
-		      					<img data-src="holder.js/300x300" >
-		        					<h3>{{slide.slidetext1}}</h3>		        					
-		        					<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-		      					</div>
-		    				</div>
-		      			</div>
-		    		</div>
-
-		    		<div class="item">
-		      			<img src="{{slide.slideimage2.url}}">
-		      			<div class="carousel-caption">
-		        			<h3>TEXT2</h3>
-		    				<p>TEXT</p>
-		      			</div>
-		    		</div>	
-		    		<div class="item">
-		      			<img src="{{slide.slideimage3.url}}">
-		      			<div class="carousel-caption">
-		        			<h3>TEXT2</h3>
-		    				<p>TEXT</p>
-		      			</div>
-		    		</div>	    		
-		  		</div>
-		  		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    		<span class="sr-only">Prev</span>
-		  		</a>
-		  		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    		<span class="sr-only">Next</span>
-		  		</a>
-				</div>
-				</div>
-				
-
-
-				<div class="pix">
-					<section id="ex1"></section>
-				</div>
-
-
-
-				<div class="aboutusback"></div>
-				<div class="aboutus">									
-				  <h1>Про нас</h1>
-				  <p><h3>{{slide.aboutustext}}</h3></p>			  
-				</div>
-				{% endfor %}
-
-
-				<div class="pix2">
-					<div class="separator"></div>
-					<section id="ex2"></section>
-				</div>
-				{% for article in article %}
-				<div class="one">				
-
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<div class="box">
-								<div class="dontsee"></div>
-								<img width="300" src="{{article.image1.url}}" alt="...">
-								<p><span>{{ article.title1}}</span></p><h4>{{ article.text1}}</h4>
-								<h3>{{ article.price1}}</h3>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="box">
-								<div class="dontsee"></div>
-								<img width="300" src="{{article.image2.url}}" alt="...">
-								<p><span>{{ article.title2}}</span></p><h4>{{ article.text2}}</h4>
-								<h3>{{ article.price2}}</h3>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="box">
-								<div class="dontsee"></div>
-								<img width="300" src="{{article.image3.url}}" alt="...">
-								<p><span>{{ article.title3}}</span></p><h4>{{ article.text3}}</h4>
-								<h3>{{ article.price3}}</h3>
-							</div>
-
-						</div>
-
-
-					</div>
-
-					</div>
-
-					<div class="three">
-						
-						<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<div class="box">
-								<div class="dontsee"></div>
-								<img width="300" src="{{article.image4.url}}" alt="...">
-								<p><span>{{ article.title4}}</span></p><h4>{{ article.text4}}</h4>
-								<h3>{{ article.price4}}</h3>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-4">
-							<div class="box">
-								<div class="dontsee"></div>
-								<img width="300" src="{{article.image5.url}}" alt="...">
-								<p><span>{{ article.title5}}</span></p><h4>{{ article.text5}}</h4>
-								<h3>{{ article.price5}}</h3>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="box">
-								<div class="dontsee"></div>
-								<img width="300" src="{{article.image6.url}}" alt="...">
-								<p><span>{{ article.title6}}</span></p><h4>{{ article.text6}}</h4>
-								<h3>{{ article.price6}}</h3>
-
-								{% endfor %}
-							</div>
-						</div>
-					</div>
-
-					<div class="price">
-					<button type="button" class="btn btn-default btn-lg btn-block" ><a href="https://drive.google.com/file/d/0B6fuGQoYy31PUW9wUUQwOElERTg/view?usp=sharing">Переглянути ціни</a></button>
-					</div>
-
-				
-					<div class="pix3">
-					<div class="separator"></div>
-					<section id="ex3"></section>
-					</div>
-
-
-				{% for trademark in trademark %}
-				<div class="backlogo"></div>
-				<div class="slider">
-   <div class="carousel shadow"> 
-      <div class="carousel-button-left"><a href="#"></a></div> 
-      <div class="carousel-button-right"><a href="#"></a></div> 
-		<div class="carousel-wrapper"> 
-		   <div class="carousel-items"> 
-
-			  <div class="carousel-block">
-					<img src="{{trademark.tm1.url}}" alt="" />
-			  </div>
-			  <div class="carousel-block">
-					<img src="{{trademark.tm2.url}}" alt="" />
-			  </div>
-			  <div class="carousel-block">
-					<img src="{{trademark.tm3.url}}" alt="" />
-			  </div>
-			  <div class="carousel-block">
-					<img src="{{trademark.tm4.url}}" alt="" />
-			  </div>
-			  <div class="carousel-block">
-					<img src="{{trademark.tm5.url}}" alt="" />
-			  </div>
-			  <div class="carousel-block">
-					<img src="{{trademark.tm6.url}}" alt="" />
-			  </div>
-			  <div class="carousel-block">
-					<img src="{{trademark.tm1.url}}" alt="" />
-			  </div>            
-			  <div class="carousel-block"> 
-					<img src="{{trademark.tm1.url}}" alt="" />
-			  </div>
-		   </div>
-		</div>
-   </div>
-</div>	
-		                
-		            
-		        {% endfor %} 
-		       
-			</div> 
-
-
-		<div class="pix4">
-					<div class="separator"></div>
-	<section id="ex4">
-		...
-	</section>
-					</div>
-
-
-
-
-    	<script>
-  	$(document).ready(function(){
-	$("#skroll").on("click","a", function (event) {
-		
-		event.preventDefault();
-
-		
-		var id  = $(this).attr('href'),
-
-		
-			top = $(id).offset().top;
-		
-		
-		$('body,html').animate({scrollTop: top}, 1500);
-	});
-});
-  	</script>
-
-  	
-
-
-		<div class="line"></div>
-		<div class="contact">
-			
-			<div class="contacttext">
-
-			<form action="/contact/" method="post" >{% csrf_token %}
+    </div>
+    </section>
+    <div class="separator"></div>
+    <section id="ex1"></section>
+    <div class="about-us">
+      <div class="photo"><img src="{% static 'images/face2.jpg' %}"></div>
+      <div class="txt"><p><h2>Про нас</h2></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    </div>
+    <section id="ex2"></section>
+    <div class="article">
+      <h1><p>Групи товарів</p></h1>
+    <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'images/smallslide10.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Назва</h4>
+                    <p class="group inner list-group-item-text">
+                        Опис товарів Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                від 21грн</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Ціни</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-4"><div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'images/smallslide9.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Назва</h4>
+                    <p class="group inner list-group-item-text">
+                        Опис товарів Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                від 21грн</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Ціни</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'images/smallslide3.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Назва</h4>
+                    <p class="group inner list-group-item-text">
+                        Опис товарів Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                від 21грн</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Ціни</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'images/smallslide6.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Назва</h4>
+                    <p class="group inner list-group-item-text">
+                        Опис товарів Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                від 21грн</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Ціни</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'images/smallslide5.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Назва</h4>
+                    <p class="group inner list-group-item-text">
+                        Опис товарів Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                від 21грн</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Ціни</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'images/smallslide4.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Назва</h4>
+                    <p class="group inner list-group-item-text">
+                        Опис товарів Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                від 21грн</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Ціни</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    <section id="ex3"></section>
+    <div class="sale">
+    <h1><p>Акції</p></h1>
+    <div id="owl-demo" class="owl-carousel owl-theme">
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide10.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide9.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide7.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide5.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide6.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide7.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide5.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide9.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide10.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+      <div class="item"><div class="thumbnail">
+        <div class="caption">
+        <h5>Назва</h5>
+        <h2>Ціна</h2>
+      </div>
+      <img src="{% static 'images/smallslide6.jpg' %}">
+      <div class="caption">
+        <p>Короткий опис акційного товару</p>
+      </div>
+      </div>
+      </div>
+    </div>     
+    <div class="customNavigation">
+      <a class="btn prev">Попередня</a>
+      <a class="btn next">&nbsp;Наступна&nbsp;</a>
+    </div>
+    </div>
+  </div>
+  <section id="ex4"></section>
+  <div class="footer">
+    <div class="contact">
+      <h1><p>Написати нам</p></h1>
+      <form action="/contact/" method="post" >{% csrf_token %}
 
 
     {{ form.non_field_errors }}
 	<div>
-	  <label for="id_subject">Тема:</label>
+	  <label for="id_subject"></label>
 	  {{ form.subject.errors }}
 	  <h5>{{ form.subject }}</h5>
 	</div>
 	<div>
-	  <label for="id_sender">E-mail:</label>
+	  <label for="id_phone"></label>
+	  {{ form.phone.errors }}
+	  <h5>{{ form.phone }}</h5>
+	</div>
+	<div>
+	  <label for="id_sender"></label>
 	  {{ form.sender.errors }}
 	  <h5>{{ form.sender }}</h5>
 	</div>
 	<div>
-	  <label for="id_message">Текст повідомлення:</label>
+	  <label for="id_message" ></label>
+     
 	  {{ form.message.errors }}
 	  
 	  {{ form.message }}
@@ -288,22 +374,24 @@
 	  
 	</div>
 	
-	<input type="submit" value="Надіслати" />
+	 <input  type="submit" class="btn btn-link"  value="Надіслати"> 
 </form>	
 
-			</div>
-			</div>
-		</div>
 
-	</div>
-	
+<!-- 
+      <div class="small">
+      <input type="text" class="form-control" placeholder="Ім'я">
+      <input type="tel" class="form-control" placeholder="Номер телефону">
+      <input type="email" class="form-control" placeholder="Електронна пошта">
+      </div>
+      <textarea class="form-control" rows="3"></textarea>-->
+     
+ 
 
+  </div>
+  </div>
+  </div>
 <script type="text/javascript" src="{% static 'script/script.js'%}"></script>
-
-
-	<div class="imageback">
-		<img src="https://static.pexels.com/photos/7174/summer-grass.jpg" width="100%"height="100%"></div>
-	</body>	
-	
-	
+<script type="text/javascript" src="{% static 'script/owl-carousel/owl.carousel.js'%}"></script>
+</body>	
 </html>
